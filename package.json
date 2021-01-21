@@ -1,0 +1,33 @@
+{
+  "name": "@iamanubhavsaini/test-node-packages",
+  "version": "2021.1.1",
+  "description": "Tests node packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAmAnubhavSaini/test-node-packages.git"
+  },
+  "keywords": [
+    "test",
+    "test-node",
+    "test-package"
+  ],
+  "author": "Anubhav <iamanubhavsaini@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IAmAnubhavSaini/test-node-packages/issues"
+  },
+  "homepage": "https://github.com/IAmAnubhavSaini/test-node-packages#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.22",
+    "jasmine": "^3.6.4"
+  },
+  "dependencies": {
+    "@f0c1s/color-red": "0.0.1",
+    "@f0c1s/color-yellow": "0.0.1",
+    "@f0c1s/easy-cors": "^2019.2.2"
+  }
+}
