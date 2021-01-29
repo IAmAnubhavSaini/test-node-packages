@@ -1,6 +1,6 @@
 {
   "name": "@iamanubhavsaini/test-node-packages",
-  "version": "2021.1.3",
+  "version": "2021.1.4",
   "description": "Tests node packages",
   "scripts": {
     "test": "jasmine"
@@ -29,6 +29,7 @@
     "@f0c1s/color-yellow": "0.0.1",
     "@f0c1s/easy-cors": "^2019.2.2",
     "@f0c1s/intercalate-string": "^2018.12.0",
+    "@f0c1s/repeat-string": "^4.0.0",
     "@f0c1s/x-powered-by": "^1.0.0",
     "express": "^4.17.1"
   }
