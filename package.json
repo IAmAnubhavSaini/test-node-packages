@@ -21,8 +21,7 @@
   },
   "homepage": "https://github.com/IAmAnubhavSaini/test-node-packages#readme",
   "devDependencies": {
-    "@types/node": "^14.14.22",
-    "jasmine": "^3.6.4"
+    "@types/node": "^14.14.22"
   },
   "dependencies": {
     "@f0c1s/color-red": "0.0.1",
