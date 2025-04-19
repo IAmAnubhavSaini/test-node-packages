@@ -7,4 +7,11 @@ Tests node packages.
 3. @f0c1s/x-powered-by : node src/x-powered-by.js
 4. @f0c1s/repeat-string: repeat string n times
 5. @f0c1s/non-consecutive-repeat-in-string@2.0.0
-6.
+6. @f0c1s/pkgs
+
+## License
+
+MIT License
+
+Copyright (c) 2021-2025 Anubhav Saini
+

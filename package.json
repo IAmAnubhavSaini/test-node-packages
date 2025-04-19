@@ -14,23 +14,27 @@
     "test-node",
     "test-package"
   ],
-  "author": "Anubhav <iamanubhavsaini@gmail.com>",
+  "author": "Anubhav Saini <iamanubhavsaini+git@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IAmAnubhavSaini/test-node-packages/issues"
   },
   "homepage": "https://github.com/IAmAnubhavSaini/test-node-packages#readme",
   "devDependencies": {
-    "@types/node": "^14.14.22"
+    "@types/jasmine": "^5.1.7",
+    "@types/node": "^22.14.1",
+    "jasmine": "^5.6.0",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@f0c1s/color-red": "0.0.1",
-    "@f0c1s/color-yellow": "0.0.1",
-    "@f0c1s/easy-cors": "^2019.2.2",
+    "@f0c1s/color-red": "^0.0.1",
+    "@f0c1s/color-yellow": "^0.0.1",
+    "@f0c1s/easy-cors": "^2025.4.3",
     "@f0c1s/intercalate-string": "^2018.12.0",
     "@f0c1s/non-consecutive-repeat-in-string": "^2.0.0",
-    "@f0c1s/repeat-string": "^4.0.0",
-    "@f0c1s/x-powered-by": "^1.0.0",
-    "express": "^4.17.1"
+    "@f0c1s/pkgs": "^1.7.0",
+    "@f0c1s/repeat-string": "^5.0.0",
+    "@f0c1s/x-powered-by": "^2021.4.19",
+    "express": "^5.1.0"
   }
 }
