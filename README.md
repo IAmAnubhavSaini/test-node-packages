@@ -8,6 +8,7 @@ Tests node packages.
 4. @f0c1s/repeat-string: repeat string n times
 5. @f0c1s/non-consecutive-repeat-in-string@2.0.0
 6. @f0c1s/pkgs
+7. @vanilla-web-components/storyboard
 
 ## License
 

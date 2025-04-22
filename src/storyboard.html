@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storyboard</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "storyboard": "/node_modules/@vanilla-web-components/storyboard/dist/storyboard/storyboard.js"
+        }
+      }
+    </script>
+    <script type="module">
+      import sb from "storyboard";
+      console.log({ sb });
+      sb.registerStoryBoard();
+    </script>
+  </head>
+  <body>
+    <story-board columns="3" item-height="200px" item-width="150px" storage-key="demo"></story-board>
+    <script>
+      const keys = ["demo"];
+      keys.forEach((key) =>
+        localStorage.setItem(
+          key,
+          JSON.stringify([
+            { src: "/src/imgs/img1.png", caption: "1" },
+            { src: "/src/imgs/img2.png", caption: "2" },
+            { src: "/src/imgs/img3.png", caption: "3" },
+            { src: "/src/imgs/img1.png", caption: "1" },
+            { src: "/src/imgs/img2.png", caption: "2" },
+            { src: "/src/imgs/img3.png", caption: "3" },
+          ])
+        )
+      );
+
+      customElements.whenDefined("story-board").then(() => {
+        document.querySelector("story-board")?.connectedCallback();
+      });
+    </script>
+  </body>
+</html>
