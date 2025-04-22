@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linear example</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "linear": "/node_modules/@vanilla-web-components/layout/dist/linear/linear.js"
+        }
+      }
+    </script>
+    <script type="module">
+        import linear from "linear";
+        console.log({ linear });
+        linear.registerLinear();
+    </script>
+    <style>
+        .hmm {
+            border: 1px solid yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <layout-linear unique-key="layout-linear-ver" direction="vertical" height="320px" width="80dw" classes="hmm"
+        margin:tb="2">
+        <div style="border: 1px solid red; height: 100px; width: 200px">slot item | sloted item || slot item | sloted item</div>
+        <div style="border: 1px solid red; height: 400px; width: 500px">slot item | sloted item || slot item | sloted item</div>
+        <div style="border: 1px solid red; height: 100px; width: 200px">slot item | sloted item || slot item | sloted item</div>
+    </layout-linear>
+    <layout-linear unique-key="layout-linear-hor" direction="horizontal" gap:"20rem" width="50dvw" margin:rl="2">
+        <div style="border: 1px solid red; height: 100px; width: 250px">slot item | sloted item || slot item | sloted item</div>
+        <div style="border: 1px solid red; height: 100px; width: 1200px">slot item | sloted item || slot item | sloted item</div>
+        <div style="border: 1px solid red; height: 300px; width: 200px">slot item | sloted item || slot item | sloted item</div>
+    </layout-linear>
+</body>
+
+</html>
