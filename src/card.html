@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Card example</title>
+        <script type="importmap">
+            {
+                "imports": {
+                    "linear": "/node_modules/@vanilla-web-components/layout/dist/linear/linear.js",
+                    "card": "/node_modules/@vanilla-web-components/layout/dist/card/card.js"
+                }
+            }
+        </script>
+        <script type="module">
+            import linear from "linear";
+            console.log({ linear, card });
+            linear.register();
+            import card from "card";
+            card.register();
+        </script>
+        <style>
+            card-layout {
+                margin: 1rem;
+                padding: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <card-layout orientation="landscape" height="30dvh" width="30dvh">
+            <header>header</header>
+            <section>section</section>
+            <footer>footer</footer>
+        </card-layout>
+        <linear-layout gap="10rem" direction="horizontal">
+            <card-layout orientation="portrait" height="10dvh" width="20dvw">
+                <header>header</header>
+                <section>section</section>
+                <footer>footer</footer>
+            </card-layout>
+            <card-layout orientation="landscape" height="20dvh" width="20dvw">
+                <header>header</header>
+                <section>section</section>
+                <footer>footer</footer>
+            </card-layout>
+        </linear-layout>
+    </body>
+</html>
